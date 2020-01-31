@@ -15,7 +15,7 @@
         <strong>{{ boldmessage }}</strong>
     </div>
 
-    <div>
+    {% comment %} <div>
         {% if categories %}
         <ul>
             {% for category in categories %}
@@ -27,12 +27,11 @@
         {% else %}
         <strong>There are no categories present.</strong>
         {% endif %}
-    </div>
-
-    <div>
-        <a href="/rango/about/">About</a><br />
+    </div> {% endcomment %}
+<a href="/rango/about/">About</a><br />
+    {% comment %} <div>
         <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
-    </div>
+    </div> {% endcomment %}
 </body>
 
 </html>
