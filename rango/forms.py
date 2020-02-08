@@ -31,9 +31,8 @@ class PageForm(forms.ModelForm):
             cleaned_data['url'] = url
         return cleaned_data
 
-
-class Meta:
+    class Meta:
         # Provide an association between the ModelForm and a model
-    model = Page
+        model = Page
 
-    exclude = ('category',)
+        exclude = ('category',)
